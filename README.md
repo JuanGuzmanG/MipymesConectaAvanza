@@ -1,2 +1,2 @@
-# CaliHist-ricaViva
+# CaliHistoriaViva
 Proyecto Hackaton TalentoTech
