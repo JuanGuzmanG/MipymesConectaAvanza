@@ -10,7 +10,6 @@ const totalProductos = carrito.reduce((sum, prod) => sum + prod.cantidad, 0);
 
 // Actualizamos el texto del contador
 cartCounter.textContent = totalProductos;
-cartCountersmall.textContent = totalProductos;
 // Ocultamos o mostramos el contador según el número de productos
 }
 }
