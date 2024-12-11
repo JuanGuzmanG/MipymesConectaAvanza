@@ -32,6 +32,9 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <button class="btn btn-info">
+          <a class="text-decoration-none" href="pago.html" target="_blank"><i class="bi bi-credit-card-fill"></i> PAGAR:<span id="cart-counter" class="badge text-black fs-6">0</span></a>
+        </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <img class="logo" src="assets/img/Logo.png" alt="" />
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -47,14 +50,14 @@
               <a class="nav-link active" href="Compras.html">compras</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Prodcutos.html">productos</a>
+              <a class="nav-link" href="productos.html">productos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Contacto.html">contacto</a>
             </li>
           </ul>
-          <i class="bi bi-bag-fill ps-2 bg-white rounded-pill"><span id="cart-counter" class="badge text-black fs-6">0</span></i>
-          <i class="bi bi-eye-fill p-3"></i>
+          <i class="bi bi-bag-fill ps-2 pt-1 bg-white rounded-pill"><span id="cart-counter" class="badge text-black fs-6">0</span></i>
+            <i class="bi bi-eye-fill mx-3 ps-2 bg-white rounded-pill"><span id="contador" class="badge text-black fs-6">0</span></i>
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
@@ -128,10 +131,11 @@
 
           <!-- Cards (centro) -->
           <div class="col-12 col-md-6 border-start border-end border-dark">
-            <div
-              class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 cards"
-            ></div>
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4 justify-content-center cards">
+              <!-- Aquí irán las tarjetas -->
+            </div>
           </div>
+          
           <!-- Carrito (izquierda) -->
           <aside class="col-12 col-md-3">
             <h3 class="text-center bg-primary-subtle p-1 rounded-pill fw-bold">Carrito</h3>
@@ -179,6 +183,7 @@
     </footer>
     <!-- end footer -->
     <script src="assets/js/compras.js"></script>
+    <script src="assets/js/vistas.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -24,20 +24,20 @@
             <a class="nav-link" aria-current="page" href="Index.html">inicio</a>
             </li>
             <li class="nav-item ">
-            <a class="nav-link avtive" href="Acercade.html">acerca de</a>
+            <a class="nav-link avtive" href="acercade.html">acerca de</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="Compras.html">compras</a>
+            <a class="nav-link" href="compras.html">compras</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" href="Prodcutos.html">productos</a>
+            <a class="nav-link active" href="productos.html">productos</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="Contacto.html">contacto</a>
+            <a class="nav-link" href="contacto.html">contacto</a>
             </li>
         </ul>
-        <i class="bi bi-bag-fill ps-2 bg-white rounded-pill"><span id="cart-counter" class="badge text-black fs-6">0</span></i>
-        <i class="bi bi-eye-fill p-3"></i>
+        <i class="bi bi-bag-fill ps-2 pt-1 bg-white rounded-pill"><span id="cart-counter" class="badge text-black fs-6">0</span></i>
+        <i class="bi bi-eye-fill mx-3 ps-2 bg-white rounded-pill"><span id="contador" class="badge text-black fs-6">0</span></i>
         <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-primary" type="submit">Search</button>
@@ -104,13 +104,12 @@
         </div>
       </aside>
 
-      <!-- Cards (centro) -->
-      <div class="col-12 col-md-6 border-start border-end border-dark">
-        <div
-          class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 cards"
-        ></div>
-      </div>
+  <!-- Cards (centro) -->
+  <div class="col-12 col-md-9 border-start border-dark">
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4 justify-content-center cards"></div>
+  </div>
 </main>
+
 <!-- start footer -->
 <footer class="bg-primary-subtle py-3 border-top">
     <div class="container">
@@ -144,7 +143,9 @@
 
 
     <!-- Javscript -->
-    <script src="assets/js/compras.js"></script>
+    <script src="assets/js/productos.js"></script>
+    <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/vistas.js"></script>
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

@@ -1,12 +1,20 @@
 const productos = [
-  { id: 1, nombre: "Elder Ring", precio: 100, categoria: "accion", imagen: "assets/img/eldenring.jpg" },
-  { id: 2, nombre: "Divinity 2", precio: 150, categoria: "aventura", imagen: "assets/img/divinity2.png" },
-  { id: 3, nombre: "Battlefield 3", precio: 200, categoria: "disparos", imagen: "assets/img/battlefield.jpg" },
-  { id: 4, nombre: "Neon Blood", precio: 200, categoria: "accion", imagen: "assets/img/NEON_BLOOD.jpg" },
-  { id: 5, nombre: "Quake", precio: 200, categoria: "disparos", imagen: "assets/img/QuakeWars.jpg" },
-  { id: 6, nombre: "Red Dead Redemption", precio: 200, categoria: "aventura", imagen: "assets/img/RDR.PNG" },
-  { id: 7, nombre: "Son of the Forest", precio: 200, categoria: "rolplay", imagen: "assets/img/sotf.jpg" },
-  { id: 8, nombre: "Terraria", precio: 200, categoria: "simulacion", imagen: "assets/img/Terraria.webp" },
+  { id: 1, nombre: "Software logistica 1", precio: 100, categoria: "inventario", imagen: "assets/img/marketplace.jpg" },
+  { id: 2, nombre: "Prestamo 1", precio: 150, categoria: "financiero", imagen: "assets/img/marketplace.jpg" },
+  { id: 3, nombre: "Curso 1", precio: 200, categoria: "educativo", imagen: "assets/img/marketplace.jpg" },
+  { id: 4, nombre: "Campaña 1", precio: 200, categoria: "marketing", imagen: "assets/img/marketplace.jpg" },
+  { id: 5, nombre: "Software logistica 2", precio: 110, categoria: "inventario", imagen: "assets/img/marketplace.jpg" },
+  { id: 6, nombre: "Prestamo 2", precio: 160, categoria: "financiero", imagen: "assets/img/marketplace.jpg" },
+  { id: 7, nombre: "Curso 2", precio: 210, categoria: "educativo", imagen: "assets/img/marketplace.jpg" },
+  { id: 8, nombre: "Campaña 2", precio: 210, categoria: "marketing", imagen: "assets/img/marketplace.jpg" },
+  { id: 9, nombre: "Software logistica 3", precio: 120, categoria: "inventario", imagen: "assets/img/marketplace.jpg" },
+  { id: 10, nombre: "Prestamo 3", precio: 170, categoria: "financiero", imagen: "assets/img/marketplace.jpg" },
+  { id: 11, nombre: "Curso 3", precio: 220, categoria: "educativo", imagen: "assets/img/marketplace.jpg" },
+  { id: 12, nombre: "Campaña 3", precio: 220, categoria: "marketing", imagen: "assets/img/marketplace.jpg" },
+  { id: 13, nombre: "Software logistica 4", precio: 130, categoria: "inventario", imagen: "assets/img/marketplace.jpg" },
+  { id: 14, nombre: "Prestamo 4", precio: 180, categoria: "financiero", imagen: "assets/img/marketplace.jpg" },
+  { id: 15, nombre: "Curso 4", precio: 230, categoria: "educativo", imagen: "assets/img/marketplace.jpg" },
+  { id: 16, nombre: "Campaña 4", precio: 230, categoria: "marketing", imagen: "assets/img/marketplace.jpg" }
 ];
 
 let carrito = [];
@@ -40,7 +48,7 @@ function renderizarProductos(listaProductos = productos) {
 
   listaProductos.forEach((producto) => {
     const card = document.createElement("div");
-    card.classList.add("card", "p-3");
+    card.classList.add("card", "p-2");
 
     card.innerHTML = `
       <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}" />
@@ -102,11 +110,11 @@ function actualizarCarrito() {
     li.classList.add("list-group-item", "d-flex", "align-items-center");
 
     li.innerHTML = `
-      <img src="${producto.imagen}" alt="${producto.nombre}" class="img-thumbnail" style="width: 50px; margin-right: 10px;" />
-      <div>
+      <div class="d-flex align-items-center">
+        <img src="${producto.imagen}" alt="${producto.nombre}" class="img-thumbnail" style="width: 50px; margin-right: 10px;" />
         <div>${producto.nombre} - $${producto.precio} x ${producto.cantidad}</div>
-        <button class="btn btn-danger btn-sm" data-index="${index}">Eliminar</button>
       </div>
+      <button class="btn btn-danger btn-sm ms-auto" data-index="${index}"><i class="bi bi-trash-fill"></i></button>
     `;
     carritoDOM.appendChild(li);
 

@@ -1,9 +1,9 @@
 const productos = [
     { id: 1, nombre: "marketplace", description: "conoce sus productos",imagen: "assets/img/marketplace.jpg"},
-    { id: 2, nombre: "gestion de inventarios", description: "sistemas inventarios",imagen: "assets/img/marketplace.jpg"},
-    { id: 3, nombre: "gestion financiera", description: "Prestamos y Asesorias",imagen: "assets/img/marketplace.jpg"},
-    { id: 4, nombre: "educacion", description: "Cursos y diplomados",imagen: "assets/img/marketplace.jpg"},
-    { id: 4, nombre: "marketing digital", description: "contenido en la web",imagen: "assets/img/marketplace.jpg"},
+    { id: 2, nombre: "gestion de inventarios", description: "sistemas inventarios",imagen: "assets/img/inventario.jpg"},
+    { id: 3, nombre: "gestion financiera", description: "Prestamos y Asesorias",imagen: "assets/img/financiero.jpg"},
+    { id: 4, nombre: "educacion", description: "Cursos y diplomados",imagen: "assets/img/educacion.jpg"},
+    { id: 4, nombre: "marketing digital", description: "contenido en la web",imagen: "assets/img/marketing.jpg"},
 ];
   
   let carrito = [];
