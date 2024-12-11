@@ -1,21 +1,21 @@
 // Datos de productos
 const productos = [
-    { id: 1, nombre: "Software logistica 1", precio: 100, categoria: "inventario", imagen: "assets/img/marketplace.jpg" },
-    { id: 2, nombre: "Prestamo 1", precio: 150, categoria: "financiero", imagen: "assets/img/marketplace.jpg" },
-    { id: 3, nombre: "Curso 1", precio: 200, categoria: "educativo", imagen: "assets/img/marketplace.jpg" },
-    { id: 4, nombre: "Campaña 1", precio: 200, categoria: "marketing", imagen: "assets/img/marketplace.jpg" },
-    { id: 5, nombre: "Software logistica 2", precio: 110, categoria: "inventario", imagen: "assets/img/marketplace.jpg" },
-    { id: 6, nombre: "Prestamo 2", precio: 160, categoria: "financiero", imagen: "assets/img/marketplace.jpg" },
-    { id: 7, nombre: "Curso 2", precio: 210, categoria: "educativo", imagen: "assets/img/marketplace.jpg" },
-    { id: 8, nombre: "Campaña 2", precio: 210, categoria: "marketing", imagen: "assets/img/marketplace.jpg" },
-    { id: 9, nombre: "Software logistica 3", precio: 120, categoria: "inventario", imagen: "assets/img/marketplace.jpg" },
-    { id: 10, nombre: "Prestamo 3", precio: 170, categoria: "financiero", imagen: "assets/img/marketplace.jpg" },
-    { id: 11, nombre: "Curso 3", precio: 220, categoria: "educativo", imagen: "assets/img/marketplace.jpg" },
-    { id: 12, nombre: "Campaña 3", precio: 220, categoria: "marketing", imagen: "assets/img/marketplace.jpg" },
-    { id: 13, nombre: "Software logistica 4", precio: 130, categoria: "inventario", imagen: "assets/img/marketplace.jpg" },
-    { id: 14, nombre: "Prestamo 4", precio: 180, categoria: "financiero", imagen: "assets/img/marketplace.jpg" },
-    { id: 15, nombre: "Curso 4", precio: 230, categoria: "educativo", imagen: "assets/img/marketplace.jpg" },
-    { id: 16, nombre: "Campaña 4", precio: 230, categoria: "marketing", imagen: "assets/img/marketplace.jpg" }
+    { id: 1, nombre: "empresa construccion 1", precio: 100, categoria: "construccion", imagen: "assets/img/construccion.jpg" },
+    { id: 2, nombre: "empresa ropa 1", precio: 150, categoria: "ropa", imagen: "assets/img/ropa.jpg" },
+    { id: 3, nombre: "empresa comida 1", precio: 200, categoria: "comida", imagen: "assets/img/comida.jpg" },
+    { id: 4, nombre: "empresa miniMarket 1", precio: 200, categoria: "minimarket", imagen: "assets/img/minimarket.jpg" },
+    { id: 5, nombre: "empresa construccion 2", precio: 110, categoria: "construccion", imagen: "assets/img/construccion.jpg" },
+    { id: 6, nombre: "empresa ropa 2", precio: 160, categoria: "ropa", imagen: "assets/img/ropa.jpg" },
+    { id: 7, nombre: "empresa comida 2", precio: 210, categoria: "comida", imagen: "assets/img/comida.jpg" },
+    { id: 8, nombre: "empresa miniMarket 2", precio: 210, categoria: "minimarket", imagen: "assets/img/minimarket.jpg" },
+    { id: 9, nombre: "empresa construccion 3", precio: 120, categoria: "construccion", imagen: "assets/img/construccion.jpg" },
+    { id: 10, nombre: "empresa ropa 3", precio: 170, categoria: "ropa", imagen: "assets/img/ropa.jpg" },
+    { id: 11, nombre: "empresa comida 3", precio: 220, categoria: "comida", imagen: "assets/img/comida.jpg" },
+    { id: 12, nombre: "empresa miniMarket 3", precio: 220, categoria: "minimarket", imagen: "assets/img/minimarket.jpg" },
+    { id: 13, nombre: "empresa construccion 4", precio: 130, categoria: "construccion", imagen: "assets/img/construccion.jpg" },
+    { id: 14, nombre: "empresa ropa 4", precio: 180, categoria: "ropa", imagen: "assets/img/ropa.jpg" },
+    { id: 15, nombre: "empresa comida 4", precio: 230, categoria: "comida", imagen: "assets/img/comida.jpg" },
+    { id: 16, nombre: "empresa miniMarket 4", precio: 230, categoria: "minimarket", imagen: "assets/img/minimarket.jpg" }
   ];
   
   // Referencia del contenedor de las tarjetas y los filtros

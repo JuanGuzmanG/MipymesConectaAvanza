@@ -1,20 +1,20 @@
 const productos = [
-  { id: 1, nombre: "Software logistica 1", precio: 100, categoria: "inventario", imagen: "assets/img/marketplace.jpg" },
-  { id: 2, nombre: "Prestamo 1", precio: 150, categoria: "financiero", imagen: "assets/img/marketplace.jpg" },
-  { id: 3, nombre: "Curso 1", precio: 200, categoria: "educativo", imagen: "assets/img/marketplace.jpg" },
-  { id: 4, nombre: "Campaña 1", precio: 200, categoria: "marketing", imagen: "assets/img/marketplace.jpg" },
-  { id: 5, nombre: "Software logistica 2", precio: 110, categoria: "inventario", imagen: "assets/img/marketplace.jpg" },
-  { id: 6, nombre: "Prestamo 2", precio: 160, categoria: "financiero", imagen: "assets/img/marketplace.jpg" },
-  { id: 7, nombre: "Curso 2", precio: 210, categoria: "educativo", imagen: "assets/img/marketplace.jpg" },
-  { id: 8, nombre: "Campaña 2", precio: 210, categoria: "marketing", imagen: "assets/img/marketplace.jpg" },
-  { id: 9, nombre: "Software logistica 3", precio: 120, categoria: "inventario", imagen: "assets/img/marketplace.jpg" },
-  { id: 10, nombre: "Prestamo 3", precio: 170, categoria: "financiero", imagen: "assets/img/marketplace.jpg" },
-  { id: 11, nombre: "Curso 3", precio: 220, categoria: "educativo", imagen: "assets/img/marketplace.jpg" },
-  { id: 12, nombre: "Campaña 3", precio: 220, categoria: "marketing", imagen: "assets/img/marketplace.jpg" },
-  { id: 13, nombre: "Software logistica 4", precio: 130, categoria: "inventario", imagen: "assets/img/marketplace.jpg" },
-  { id: 14, nombre: "Prestamo 4", precio: 180, categoria: "financiero", imagen: "assets/img/marketplace.jpg" },
-  { id: 15, nombre: "Curso 4", precio: 230, categoria: "educativo", imagen: "assets/img/marketplace.jpg" },
-  { id: 16, nombre: "Campaña 4", precio: 230, categoria: "marketing", imagen: "assets/img/marketplace.jpg" }
+  { id: 1, nombre: "Software logistica 1", precio: 100, categoria: "inventario", imagen: "assets/img/Inventario.jpg" },
+  { id: 2, nombre: "Prestamo 1", precio: 150, categoria: "financiero", imagen: "assets/img/financiero.jpg" },
+  { id: 3, nombre: "Curso 1", precio: 200, categoria: "educativo", imagen: "assets/img/educacion.jpg" },
+  { id: 4, nombre: "Campaña 1", precio: 200, categoria: "marketing", imagen: "assets/img/marketing.jpg" },
+  { id: 5, nombre: "Software logistica 2", precio: 110, categoria: "inventario", imagen: "assets/img/Inventario.jpg" },
+  { id: 6, nombre: "financimiento", precio: 160, categoria: "financiero", imagen: "assets/img/financiero.jpg" },
+  { id: 7, nombre: "Curso 2", precio: 210, categoria: "educativo", imagen: "assets/img/educacion.jpg" },
+  { id: 8, nombre: "Campaña 2", precio: 210, categoria: "marketing", imagen: "assets/img/marketing.jpg" },
+  { id: 9, nombre: "Software logistica 3", precio: 120, categoria: "inventario", imagen: "assets/img/Inventario.jpg" },
+  { id: 10, nombre: "asesoria", precio: 170, categoria: "financiero", imagen: "assets/img/financiero.jpg" },
+  { id: 11, nombre: "Curso 3", precio: 220, categoria: "educativo", imagen: "assets/img/educacion.jpg" },
+  { id: 12, nombre: "Campaña 3", precio: 220, categoria: "marketing", imagen: "assets/img/marketing.jpg" },
+  { id: 13, nombre: "Software logistica 4", precio: 130, categoria: "inventario", imagen: "assets/img/Inventario.jpg" },
+  { id: 14, nombre: "abrir cuenta", precio: 180, categoria: "financiero", imagen: "assets/img/financiero.jpg" },
+  { id: 15, nombre: "Curso 4", precio: 230, categoria: "educativo", imagen: "assets/img/educacion.jpg" },
+  { id: 16, nombre: "Campaña 4", precio: 230, categoria: "marketing", imagen: "assets/img/marketing.jpg" }
 ];
 
 let carrito = [];
@@ -25,6 +25,7 @@ const carritoDOM = document.getElementById("carrito");
 const totalDOM = document.getElementById("total");
 const botonVaciar = document.getElementById("boton-vaciar");
 const cartCounter = document.getElementById("cart-counter");
+const cartCountersmall = document.getElementById("cart-counter-small");
 const filtros = document.querySelectorAll(".form-check-input"); // Checkboxes para filtrar
 
 // Función para cargar el carrito desde localStorage
@@ -48,14 +49,16 @@ function renderizarProductos(listaProductos = productos) {
 
   listaProductos.forEach((producto) => {
     const card = document.createElement("div");
-    card.classList.add("card", "p-2");
+    card.classList.add("card", "p-2","border-0");
 
     card.innerHTML = `
-      <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}" />
-      <div class="card-body">
-        <h5 class="card-title">${producto.nombre}</h5>
-        <p class="card-text">Precio: $${producto.precio}</p>
-        <button class="btn btn-primary" data-id="${producto.id}">Agregar</button>
+      <div class="card p-2 h-100">
+        <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}" />
+        <div class="card-body">
+          <h5 class="card-title">${producto.nombre}</h5>
+          <p class="card-text">Precio: $${producto.precio}</p>
+          <button class="btn btn-primary" data-id="${producto.id}">Agregar</button>
+        </div>
       </div>
     `;
 
@@ -149,7 +152,7 @@ botonVaciar.addEventListener("click", () => {
 function actualizarContadorCarrito() {
   const totalProductos = carrito.reduce((sum, prod) => sum + prod.cantidad, 0);
   cartCounter.textContent = totalProductos;
-  cartCounter.style.display = totalProductos > 0 ? "inline" : "none";
+  cartCountersmall.textContent = totalProductos;
 }
 
 // Cargar el carrito y renderizar productos al inicio
