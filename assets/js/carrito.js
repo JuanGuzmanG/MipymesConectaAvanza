@@ -12,8 +12,6 @@ const totalProductos = carrito.reduce((sum, prod) => sum + prod.cantidad, 0);
 cartCounter.textContent = totalProductos;
 cartCountersmall.textContent = totalProductos;
 // Ocultamos o mostramos el contador según el número de productos
-cartCounter.style.display = totalProductos > 0 ? "inline" : "none";
-cartCountersmall.style.display = totalProductos > 0 ? "inline" : "none";
 }
 }
 
