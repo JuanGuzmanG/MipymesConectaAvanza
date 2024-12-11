@@ -1,0 +1,13 @@
+*{
+    list-style: none;
+}
+body{
+    background-color: E3F2FF;
+}
+.logo{
+    width: 80px;
+}
+
+a{
+    color: black;
+}
