@@ -20,16 +20,18 @@ const productos = [
         card.classList.add("col");
   
         card.innerHTML = `
-            <div class="card h-100">
-                <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
-                <div class="card-body">
+        <div class="card h-100 d-flex flex-column">
+            <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+            <div class="card-body flex-grow-1">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text">${producto.description}</p>
-                <button class="btn btn-primary" data-id="${producto.id}">
-                    <a href="Compras.html" style="text-decoration: none; color: white;">Comprar</a>
-                </button>
-                </div>
             </div>
+            <div class="card-footer mt-auto">
+                <button class="btn btn-primary w-100" data-id="${producto.id}">
+                    <a href="compras.html" style="text-decoration: none; color: white;">Comprar</a>
+                </button>
+            </div>
+        </div>
         `;
   
         cardsContainer.appendChild(card);
